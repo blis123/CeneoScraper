@@ -4,17 +4,17 @@
 2. Analiza struktury kodu pojedynczej opinii
 
 |Składowa|Selektor CSS|Nazwa zmiennej|Typ danych|
-|:-------||:----------|:-------------|:---------|
-|Opinia|div.js_product-review|opinion|obiekt bs4.e[lement.Tag|
-|Identyfikator opinii|["data-entry-id"]|opinion_id|str|]
-|Autor opinii|span.user-post__author-name|author|str|
-|Rekomendacja|span.user-post__author-recomendation > em|recommendation|bool|
-|Liczba gwiazdek|span.user-post__score-count|stars|float|
-|Treść opinii|div.user-post__text|content|str|
-|Lista zalet|div.review-feature__col:has(> div[class*="positives"]) > div.review-feature__item|pros|list|
-|Lista wad|div.review-feature__col:has(> div[class*="negatives"]) > div.review-feature__item|cons|list|
-|Dla ilu osób przydatna|span[id^="votes-yes"]|useful|int|
-|Dla ilu osób nieprzydatna|span[id^="votes-no"]|useless|int|
-|Czy potwierdzona zakupem|div.review-pz|purchased|bool|
-|Data wystawienia opinii|span.user-post__published > time:nth-child(1)["datetime"]|submit_date|str|
-|Data zakupu produktu|span.user-post__published > time:nth-child(2)["datetime"]|purchase_date|str|
+|:-------|:----------|:-------------|:---------|
+|Opinia|`div.js_product-review`|review||
+|Identyfikator opinii|`["data-entry-id"]`|review_id||
+|Autor opinii|`span.user-post__author-name`|author||
+|Rekomendacja|`span.user-post__author-recomendation > em`|recommendation||
+|Liczba gwiazdek|`span.user-post__score-count`|stars||
+|Treść opinii|`div.user-post__text`|content||
+|Lista zalet|`div.review-feature__col:has(> div[class*="positives"]) > div.review-feature__item`|pros||
+|Lista wad|`div.review-feature__col:has(> div[class*="negatives"]) > div.review-feature__item`|cons||
+|Dla ilu osób przydatna|`span[id^="votes-yes"]`|useful||
+|Dla ilu osób nieprzydatna|`span[id^="votes-no"]`|useless||
+|Czy potwierdzona zakupem|`div.review-pz`|purchased||
+|Data wystawienia opinii|`span.user-post__published > time:nth-child(1)["datetime"]`|review_date||
+|Data zakupu produktu|`span.user-post__published > time:nth-child(2)["datetime"]`|purchase_date||
